@@ -8,4 +8,10 @@ public class HelloController {
     public String home(){
         return "Hello Raj!\nWelcome to your backend journey.";
     }
+
+    @GetMapping("/about")
+    public String about(){
+        return "I am Raj.\nLearning Spring Boot Day 3.";
+    }
+
 }

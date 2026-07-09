@@ -14,4 +14,9 @@ public class HelloController {
         return "I am Raj.\nLearning Spring Boot Day 3.";
     }
 
+    @GetMapping("/goal")
+    public String goal(){
+        return "Become a Product Software Engineer.";
+    }
+
 }

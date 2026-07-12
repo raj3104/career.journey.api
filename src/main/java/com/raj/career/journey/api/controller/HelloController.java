@@ -2,6 +2,7 @@ package com.raj.career.journey.api.controller;
 
 import com.raj.career.journey.api.model.Profile;
 import com.raj.career.journey.api.model.Laptop;
+import com.raj.career.journey.api.model.Book;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -33,6 +34,13 @@ public class HelloController {
         Laptop myLaptop=new Laptop("Acer", "intel i5 11th gen", 32,65000.00);
 
         return myLaptop;
+    }
+
+    @GetMapping("/book")
+    public Book getBook(){
+        Book myBook=new Book("Charlie and the chocolate Factory", "Roald Dahl",650.00);
+
+        return myBook;
     }
 
 }
